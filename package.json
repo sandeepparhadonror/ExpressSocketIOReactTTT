@@ -1,10 +1,9 @@
 {
-  "name": "react-tutorial",
-  "version": "0.0.0",
+  "name": "expres-socket-react-tutorial",
+  "version": "0.0.1",
   "private": true,
   "license": "see LICENSE file",
-  "description": "Code from the React tutorial.",
-  "main": "server.js",
+  "description": "Code for Expres-Socket IO-React Tic Toy Application.",
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "^4.4.5"
@@ -16,19 +15,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/react-tutorial.git"
+    "url": "https://github.com/sandeepparhadonror/ExpressSocketIOReactTTT"
   },
-  "keywords": [
-    "react",
-    "tutorial",
-    "comment",
-    "example"
-  ],
-  "author": "petehunt",
+  "author": "Sandeep Parhad",
   "bugs": {
-    "url": "https://github.com/reactjs/react-tutorial/issues"
+    "url": "https://github.com/sandeepparhadonror/ExpressSocketIOReactTTT/issues"
   },
-  "homepage": "https://github.com/reactjs/react-tutorial",
+  "homepage": "https://github.com/sandeepparhadonror/ExpressSocketIOReactTTT",
   "engines" : {
     "node" : "0.12.x"
   }
