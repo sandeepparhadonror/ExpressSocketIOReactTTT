@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Hello React</title>
-	<script src="build/react.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Hello React</title>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script src="build/react.js"></script>
   <script src="build/react-dom.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 </head>
+
 <body>
-    <div id="tic_toy_grid"></div>
+  <div id="tic_toy_grid"></div>
+
+  <!-- load the page first time -->
+
+  <div class="container" style="text-align: center">
+
+    <!-- ENTER PAGE -->
+    <div id="enter-page" class="row page">
+      <div class="col-md-12">
+        <h2>Tic Tac Toe</h2>
+        <hr>
+        <div class="form-group">
+          <input id="playerNameInput" type="text" class="form-control" placeholder="Enter player name">
+        </div>
+        <div class="control-group" style="margin-top: 20px;">
+          <div class="controls">
+            <button id="playBtn" class="btn btn-success">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WAITING FOR OPPONENT PAGE -->
+    <div id="waiting-page" class="row page">
+      <div class="col-md-12">
+        <h2>Waiting for opponent</h2>
+        <hr>
+        <i class="fa fa-refresh fa-spin fa-5x"></i>
+      </div>
+    </div>
+
+
+    <!-- GAME PAGE -->
+    <div id="game-page" class="row page">
+      <div class="col-md-12">
+        <h2>Tic-Tac-Toe</h2>
+        <hr>
+        <div id="game">
+          <!-- Tic Tac Toe game here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Result END -->
+    <div id="result-page" class="row page">
+      <div class="col-md-12">
+        <h2>Tic-Tac-Toe</h2>
+        <hr>
+        <div class="well">
+          <h3 id="resultText"></h3>
+          <button id="playAgainBtn" class="btn btn-success">Play again!</button>
+        </div>
+      </div>
+    </div>
+
+
     <script type="text/babel" src="tictac.js"></script>
-		<link rel="stylesheet" href="/assets/css/tictac.css">
+    <link rel="stylesheet" href="/assets/css/tictac.css">
 </body>
+
 </html>

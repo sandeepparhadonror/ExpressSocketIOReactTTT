@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "license": "see LICENSE file",
+  "main": "app.js",
   "description": "Code for Expres-Socket IO-React Tic Toy Application.",
   "dependencies": {
     "body-parser": "^1.4.3",

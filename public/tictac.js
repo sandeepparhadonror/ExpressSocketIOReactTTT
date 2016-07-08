@@ -39,7 +39,7 @@ var TicTacTable = React.createClass({
   }
 });
 
-var SIZE = 10;
+var SIZE = 3;
 
 function getDataArray(size) {
     var i, j, rowArr = [], colArr = [];
