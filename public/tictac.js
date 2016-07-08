@@ -1,6 +1,5 @@
 var Cells = React.createClass({
   render: function() {
-    console.log(data);
     return (
           <td>{this.props.data}</td>
     );
@@ -40,15 +39,20 @@ var TicTacTable = React.createClass({
   }
 });
 
-var data = [
-  [1,1,2,2,2],
-  [0,1,2,0,2],
-  [0,1,1,0,2],
-  [0,2,2,1,2],
-  [0,2,2,0,1]
-];
+var SIZE = 10;
 
-var SIZE = 5;
+function getDataArray(size) {
+    var i, j, rowArr = [], colArr = [];
+    for(i = 0; i < size; i++) {
+        for(j = 0; j < size; j++) {
+            colArr[j] = 0;
+        }
+        rowArr[i] = colArr;
+    }
+    return rowArr;
+};
+
+var data = getDataArray(SIZE);
 
 ReactDOM.render(
   <TicTacTable size={SIZE} data={data}/>,
