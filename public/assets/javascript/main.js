@@ -7,13 +7,13 @@ document.ready(function(){
         $result = $("#result-page");
 
         function switchPage(page) {
-             $('.page').css({
-                 'display': 'none'
-             });
-             page.css({
-                 'display': 'block'
-             });
-         }
+            $('.page').css({
+                'display': 'none'
+            });
+            page.css({
+                'display': 'block'
+            });
+        }
 
 
     // Init app
