@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 
   <script src="build/react.js"></script>
   <script src="build/react-dom.js"></script>
@@ -18,13 +19,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
 
 
 </head>
 
 <body>
-  <div id="tic_toy_grid"></div>
 
   <!-- load the page first time -->
 
@@ -58,7 +58,7 @@
 
 
     <!-- GAME PAGE -->
-    <div id="game-page" class="row page">
+    <div id="tic-toy-game-page" class="row page">
       <div class="col-md-12">
         <h2>Tic-Tac-Toe</h2>
         <hr>
@@ -80,9 +80,21 @@
       </div>
     </div>
 
+    <!-- Game room size is full -->
+    <div id="room-size-full" class="row page">
+      <div class="col-md-12">
+        <div class="well">
+          <h2> There are allready 2 player plaing the game , please join after some time</h2>
+        </div>
+      </div>
+    </div>
+
+
 
     <script type="text/babel" src="tictac.js"></script>
+    <script src="/assets/javascript/main.js"></script>
     <link rel="stylesheet" href="/assets/css/tictac.css">
+    <script src="/socket.io/socket.io.js"></script>
 </body>
 
 </html>

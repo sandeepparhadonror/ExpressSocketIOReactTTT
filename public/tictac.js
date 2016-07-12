@@ -39,7 +39,7 @@ var TicTacTable = React.createClass({
   }
 });
 
-var SIZE = 3;
+var SIZE = 4;
 
 function getDataArray(size) {
     var i, j, rowArr = [], colArr = [];
@@ -56,5 +56,5 @@ var data = getDataArray(SIZE);
 
 ReactDOM.render(
   <TicTacTable size={SIZE} data={data}/>,
-  document.getElementById('tic_toy_grid')
+  document.getElementById('tic-toy-game-page')
 );
