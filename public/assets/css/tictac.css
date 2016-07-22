@@ -1,7 +1,11 @@
 table, tr, td {
    border: 2px solid black;
    margin-left: 400px;
-   margin-top: 205px;
+   margin-top: 70px;
    width: 350px;
    height: 60px;
+}
+
+div#enter-page div.control-group {
+  margin-top: 20px;
 }
