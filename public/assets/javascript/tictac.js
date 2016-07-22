@@ -48,8 +48,8 @@ var MainApp = React.createClass({
 
     componentDidMount: function() {
         this.socket = io();
+        this._hideOtherComponet();
         this._bindEvents();
-
 
     },
 
@@ -74,7 +74,7 @@ var MainApp = React.createClass({
                     </div>
                     <div className="control-group">
                       <div className="controls">
-                        <button id="playBtn" className="btn btn-success">Play</button>
+                        <button id="playBtn" className="btn btn-success" onClick={this._onclick}>Play</button>
                       </div>
                     </div>
                   </div>
@@ -109,8 +109,31 @@ var MainApp = React.createClass({
         );
     },
 
-    _bindEvents: function(){
 
+    _onclick: function() {
+      console.log("we have send player name start game")
+      var playerName = setPlayerName();
+
+    },
+
+    setPlayerName: function() {
+      var playerName = document.getElementById('playerNameInput').value.trim();
+      if (playerName){
+         return playerName;
+      }else {
+        return "defualtPlayerName";
+      }
+    },
+
+
+    _hideOtherComponet: function() {
+        document.getElementById('waiting-page').style.display = "none";
+        document.getElementById('result-page').style.display = "none";
+        document.getElementById('room-size-full').style.display = "none";
+        document.getElementById('tic-toy-game-page').style.display = "none";
+    },
+
+    _bindEvents: function(){
 
 
     }
