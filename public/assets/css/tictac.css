@@ -9,3 +9,11 @@ table, tr, td {
 div#enter-page div.control-group {
   margin-top: 20px;
 }
+
+div#restart-game {
+  height: 650px;
+  width: 86%;
+  background-color: powderblue;
+  margin-left: 90px;
+  margin-top: -295px;
+}
